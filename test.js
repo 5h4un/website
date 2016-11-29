@@ -16,6 +16,7 @@ $(document).ready(function() {
     $('.jumbotron').hide().fadeIn(1000);
     $('#fadeOne').hide().fadeIn(1000);
     $('#headingOne').hide().fadeIn(1000);
+    $('#picFade').hide().fadeIn(1000);
    $(window).scroll(function() {
       $('.scrollFade').each(function(i) {
           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
