@@ -113,6 +113,20 @@ img {
     line-height: 2em;
 }
 
+#fifthSection {
+    margin-top: 50px;
+    line-height: 2em;
+}
+
+#fifthSection img {
+    width: auto;
+    max-height: 300px;
+}
+
+#fifthSection img:hover {
+    box-shadow: 0 0px 20px grey;
+}
+
 .appImg {
     max-height: 500px;
     max-width: 281px;
@@ -133,5 +147,4 @@ img {
 #fadeOne {
     color: black;
 }
-
 

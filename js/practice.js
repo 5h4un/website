@@ -30,7 +30,7 @@ function getBusinessImage(loginCreds) {
 		data: 'term=chinese&location=seattle&limit=3',
 		beforeSend: function(xhr) {
 			/*xhr.setRequestHeader uses the "Authorization" type parameter since the next parameter
-			is "Bearer " loginCreds.access_token which sets the required Authorization HTTP header
+			is "Bearer " + loginCreds.access_token which sets the required Authorization HTTP header
 			for using the Yelp! API*/
 			xhr.setRequestHeader("Authorization", "Bearer " + loginCreds.access_token);
 		},
@@ -54,7 +54,6 @@ function newSearch(loginCreds) {
 			location: $input.val(),
 			limit: 3
 		};
-
 		$.ajax({
 			type: 'GET',
 			url: 'https://api.yelp.com/v3/businesses/search',
